@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "desafio-bancario"
+version = "0.1.0"
+description = "API bancária assincrona usando FastAPI"
+authors = ["Autor <autor@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95"
+uvicorn = {extras = ["standard"], version = "^0.22"}
+databases = {extras = ["sqlite"], version = "^0.7"}
+SQLAlchemy = "^2.0"
+python-jose = "^3.3"
+pydantic-settings = "^2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
